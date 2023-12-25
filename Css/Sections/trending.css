@@ -1,0 +1,179 @@
+.trending {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.trending__suchi,
+.trending__drinks {
+  .trending__suchi-image {
+    background-image: url("../../assets/japanese_sushi.png");
+  }
+  .trending__drinks-image {
+    background-image: url("../../assets/japanese_sushi.png");
+  }
+  display: flex;
+  width: 100%;
+  min-height: 640px;
+  flex-direction: row;
+}
+
+.trending__suchi-content,
+.trending__drinks-content {
+  ul {
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+    min-width: 210px;
+  }
+  ul li p {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 32px 64px;
+}
+
+.trending__icon {
+  img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+}
+
+.trending__suchi-image,
+.trending__drinks-image {
+  img {
+    width: 254px;
+    height: 260px;
+    object-fit: contain;
+  }
+  flex: 1;
+  position: relative;
+  padding: 32px 64px;
+  background-color: var(--color-white);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* Arrows */
+.trending__arrow {
+  img {
+    object-fit: contain;
+  }
+  position: absolute;
+  z-index: 1;
+}
+
+.trending__arrow-left {
+  img {
+    width: auto;
+    height: 100%;
+  }
+  left: -2.5px;
+  top: 12%;
+}
+
+.trending__arrow-top {
+  img {
+    width: auto;
+    height: 100%;
+  }
+  top: -10.5px;
+  left: 12%;
+}
+
+.trending__arrow-bottom {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  bottom: -6.5px;
+  right: 12%;
+}
+
+.trending__arrow-right {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  right: -2.5px;
+  bottom: 12%;
+}
+
+.trending__discover {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  z-index: 1;
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* START: trending media queries */
+@media screen and (max-width: 1024px) {
+  .trending__suchi {
+    flex-direction: column;
+  }
+
+  .trending__drinks {
+    flex-direction: column-reverse;
+  }
+
+  .trending__suchi-image,
+  .trending__drinks-image {
+    width: 100%;
+    background-size: cover;
+  }
+
+  .trending__discover {
+    display: none;
+  }
+
+  .trending__arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .trending__suchi-image,
+  .trending__drinks-image img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .trending__content {
+    padding: 32px;
+  }
+}
+/* END: trending media queries */
