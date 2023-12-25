@@ -63,11 +63,14 @@
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 46px;
 }
+
+/* START: subscription media querie */
 @media screen and (max-width: 500px) {
 .subscription__form{
   min-width: 70%;
 }
 }
+/* END: subscription media queries */
 
 
 
