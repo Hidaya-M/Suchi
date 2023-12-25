@@ -11,4 +11,4 @@ Install my-project with npm
  npm run dev
 ```
 # Demo
-You can view a live demo of SUGASUCHI at [https://suchi-website.netlify.app](https://658980f97e948fe7ded02f88--bejewelled-buttercream-ed6639.netlify.app/)https://658980f97e948fe7ded02f88--bejewelled-buttercream-ed6639.netlify.app/.
+You can view a live demo of SUGASUCHI at https://bejewelled-buttercream-ed6639.netlify.app/.
