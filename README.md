@@ -11,4 +11,4 @@ Install my-project with npm
  npm run dev
 ```
 # Demo
-You can view a live demo of SUGASUCHI at https://6589b20a8c16a80233df4951--zippy-meerkat-5b4197.netlify.app/.
+You can view a live demo of SUGASUCHI at sugasuchi.netlify.app.
