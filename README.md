@@ -11,4 +11,4 @@ Install my-project with npm
  npm run dev
 ```
 # Demo
-You can view a live demo of SUGASUCHI at sugasuchi.netlify.app.
+You can view a live demo of SUGASUCHI at https://sugasuchi.netlify.app/
